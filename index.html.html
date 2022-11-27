@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesonal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91fd5734f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container"> 
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Portfolio</p>
+            <h1>Hi, I'm <span>Phasit Maliphan</span><br>From Sarasas Ektra</h1>
+        </div>
+    </div>
+</div>
+<!-------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Phasit Maliphan and I'm 17 years old.
+                         I was born is 27th April 2005. I'm from Thiland and currently studying in Sarasas Ektra School. Currently, I'm learning in Extra Class Program.
+                        I'm a beginner at UX design and I have some My dream is to be a programmer or a software engineer one day.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Beginner at website designing. Currently learning UX design in True Digital Academy.</li>
+                                <li><span>Coding</span><br>Have some Knowledge in CSS, HTML, Python and C#</li>
+                                <li><span>Designing</span><br>Have experience in Creating, Design Application and Websites. Photoshop skills, Clip Studio, Procreate and Canvas.</li>
+                                <li><span>Acting</span><br>Have experience in acting on stage plays and series.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Activities</span><br>Particitate in Programming camp and went to Open House of Sinakarinwirot University and a CSR activities.</li>
+                                <li><span>Creating App, Website and AI</span><br>Have experience in Creating, Design Application and Websites including build an AI.</li>
+                                <li><span>Acting</span><br>Have experience in acting on stage plays and series including a director.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2008-2010</span><br>Jananan school</li>
+                                <li><span>2011-2016</span><br>Attamit school</li>
+                                <li><span>2017-2019</span><br>Taweethapisek school</li>
+                                <li><span>2020-2022</span><br>sarasas ektra school</li>
+                                <li><span>GPAX</span><br>3.26</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services------------- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Performance</h1>
+            <div class="services-list">
+               <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Mobile Application</h2>
+                <p>This is about my school project Creating by my own Knowledge.</p>
+                <a href="#">Learn more</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-bolt"></i>
+                <h2>Activity</h2>
+                <p>This will show all of my Activities and Camps</p>
+                <a href="#">Learn more</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-file-lines"></i>
+                <h2>Resume</h2>
+                <p>Short biography and skills</p>
+                <a href="#">Learn more</a>
+               </div>              
+            </div>
+        </div>
+    </div>
+    <!-- -------------Portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Mobile Application</h3>
+                        <p>This is about my school project Creating by my own Knowledge.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Activity</h3>
+                        <p>This will show all of my Activities and Camps.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Resume</h3>
+                        <p>Short biography and skills.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> bbnsoundup@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 086-111-3366</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/bbn_soundup/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/phasit.maliphan/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@bbn_soundup"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input name="Email" type="email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Phasit. Made with <i class="fa-solid fa-code"></i> Visual Studio Code using CSS, HTML, JS</p>
+        </div>
+    </div>
+ 
+
+
+<script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");               
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");               
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+            
+        }
+
+    </script>
+
+    <script>
+
+        var sider = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-120px";
+        }
+               
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4Nvo0KWvf-0F7H0HRYhV8vdKVUVLWJFcUj52k5nQmzZJUIfGocfrFxYuTgg3-A2CzXg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Massage sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""                
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
