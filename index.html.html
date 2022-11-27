@@ -208,10 +208,10 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Massage sent successfully!"
+            msg.innerHTML = "Massage sent successfully"
             setTimeout(function(){
                 msg.innerHTML = ""                
-            },4000)
+            },5000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
